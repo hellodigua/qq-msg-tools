@@ -1,4 +1,4 @@
-# qq-msg-to-json
+# qq-msg-convert
 
 > 将导出的QQ聊天记录转换为JSON格式
 
