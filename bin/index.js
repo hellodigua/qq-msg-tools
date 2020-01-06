@@ -13,14 +13,9 @@ program
 program
   .command("convert")
   .option("-i, --input-path <pattern>", "输入文件相对路径")
-  .option(
-    "-o, --output-path <path>",
-    "输出文件相对路径，若不指定则直接输出文本"
-  )
-  .action(({ inputPath, outputPath }) => {
-    lib.convertToJSON(inputPath, outputPath);
+  .action(({ inputPath }) => {
+    lib.convertToJSON(inputPath);
     // console.log("inputPath is", inputPath);
-    // console.log("outputPath is", outputPath);
   });
 
 // 解析参数
