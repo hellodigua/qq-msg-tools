@@ -1,5 +1,5 @@
 {
-  "name": "qq-msg-convert",
+  "name": "qq-msg-tools",
   "version": "0.1.0",
   "description": "> 将导出的QQ聊天记录转换为JSON格式",
   "main": "lib/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hellodigua/qq-msg-convert.git"
+    "url": "git+https://github.com/hellodigua/qq-msg-tools.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hellodigua/qq-msg-convert/issues"
+    "url": "https://github.com/hellodigua/qq-msg-tools/issues"
   },
-  "homepage": "https://github.com/hellodigua/qq-msg-convert#readme",
+  "homepage": "https://github.com/hellodigua/qq-msg-tools#readme",
   "dependencies": {
     "commander": "^4.0.1"
   }
