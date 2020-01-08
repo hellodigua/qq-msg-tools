@@ -9,7 +9,9 @@
 ## Development
 
 ```bash
-git clone
+git clone https://github.com/hellodigua/qq-msg-tools.git
+
+cd qq-msg-tools
 
 npm install
 

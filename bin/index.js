@@ -9,13 +9,11 @@ program
   .name("qqmsg")
   .usage("[options] <command>");
 
-// 执行脚本
 program
   .command("convert")
   .option("-i, --input-path <pattern>", "输入文件相对路径")
   .action(({ inputPath }) => {
     lib.convertToJSON(inputPath);
-    // console.log("inputPath is", inputPath);
   });
 
 // 解析参数
