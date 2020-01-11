@@ -13,7 +13,7 @@ program
   .command("convert")
   .option("-i, --input-path <pattern>", "输入文件相对路径")
   .action(({ inputPath }) => {
-    lib.convertToJSON(inputPath);
+    lib.convertTxt2JSON(inputPath);
   });
 
 // 解析参数

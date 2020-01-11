@@ -6,7 +6,15 @@
 - [x] 获取所有联系人
 - [ ] 获取聊天排行数据
 
-## Development
+## Usage
+
+```
+npm i qq-msg-tools
+
+qqmsg convert -i <Your ExportQQMsg File>
+```
+
+## Dev
 
 ```bash
 git clone https://github.com/hellodigua/qq-msg-tools.git
