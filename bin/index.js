@@ -16,6 +16,24 @@ program
     lib.convertTxt2JSON(inputPath);
   });
 
+program
+  .command("get <type>")
+  .option("-i, --input-path <pattern>", "输入文件相对路径")
+  .option("-p, --type-params <pattern>", "输入指定分析类型")
+  .action((type, { inputPath, typeParams }) => {
+    switch (type) {
+      case 'rank':
+
+        lib.getRank(inputPath, typeParams);
+        break;
+      case 'semantic':
+      case 'time':
+      default:
+        program.help();
+        break;
+    }
+  });
+
 // 解析参数
 program.parse(process.argv);
 
