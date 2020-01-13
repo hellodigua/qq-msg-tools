@@ -27,6 +27,8 @@ program
         lib.getRank(inputPath, typeParams);
         break;
       case 'semantic':
+        lib.getSemantic(inputPath, typeParams)
+        break;
       case 'time':
       default:
         program.help();
