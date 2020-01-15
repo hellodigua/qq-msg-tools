@@ -1,33 +1,32 @@
 #!/usr/bin/env node
-const program = require("commander");
-const pkg = require("../package.json");
-const lib = require("../lib");
+const program = require('commander');
+const pkg = require('../package.json');
+const lib = require('../lib');
 
 // 帮助信息
 program
   .version(pkg.version)
-  .name("qqmsg")
-  .usage("[options] <command>");
+  .name('qqmsg')
+  .usage('[options] <command>');
 
 program
-  .command("convert")
-  .option("-i, --input-path <pattern>", "输入文件相对路径")
+  .command('convert')
+  .option('-i, --input-path <pattern>', '输入文件相对路径')
   .action(({ inputPath }) => {
     lib.convertTxt2JSON(inputPath);
   });
 
 program
-  .command("get <type>")
-  .option("-i, --input-path <pattern>", "输入文件相对路径")
-  .option("-p, --type-params <pattern>", "输入指定分析类型")
+  .command('get <type>')
+  .option('-i, --input-path <pattern>', '输入文件相对路径')
+  .option('-p, --type-params <pattern>', '输入指定分析类型')
   .action((type, { inputPath, typeParams }) => {
     switch (type) {
       case 'rank':
-
         lib.getRank(inputPath, typeParams);
         break;
       case 'semantic':
-        lib.getSemantic(inputPath, typeParams)
+        lib.getSemantic(inputPath, typeParams);
         break;
       case 'time':
       default:
