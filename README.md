@@ -11,7 +11,27 @@
 ```
 npm i qq-msg-tools
 
-qqmsg convert -i <Your ExportQQMsg File>
+qqmsg <options> <command>
+```
+
+## API
+
+```bash
+# 转换聊天数据为JSON
+qqmsg convert -i ./public/demo.txt
+
+# 获取排行数据
+qqmsg get rank -i ./public/demo.txt
+
+# 获取活跃度排行
+qqmsg get rank -p activity -i ./public/demo.txt
+
+# 获取群聊关键词
+qqmsg get semantic -p keyword -i ./public/demo.txt
+
+# 获取TOP10成员发言关键词
+qqmsg get semantic -p membersKeyword -i ./public/demo.txt
+
 ```
 
 ## Dev
