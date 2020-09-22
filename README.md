@@ -1,10 +1,14 @@
 # qq-msg-tools
 
-> QQ聊天记录处理工具
+> QQ 聊天记录处理工具
 
-- [x] 将导出的QQ聊天记录转换为JSON格式
+- [x] 将导出的 QQ 聊天记录转换为 JSON 格式
 - [x] 获取所有联系人
-- [ ] 获取聊天排行数据
+- [x] 获取聊天排行数据
+- [ ] 分析 24 小时聊天频率
+- [ ] 分析一周 7 天聊天频率
+- [ ] 统计龙王获得数排行
+- [ ] 复读分析
 
 ## Usage
 
@@ -25,6 +29,9 @@ qqmsg get rank -i ./public/demo.txt
 
 # 获取活跃度排行
 qqmsg get rank -p activity -i ./public/demo.txt
+
+# 获取表情包发言排行
+qqmsg get rank -p picture -i ./public/demo.txt
 
 # 获取群聊关键词
 qqmsg get semantic -p keyword -i ./public/demo.txt
